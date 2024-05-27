@@ -1,0 +1,119 @@
+body{
+    background-color: #fafafa;
+}
+.port-item {
+    // margin-bottom: 66px;
+    backdrop-filter: blur(4px);
+    background-color: rgba($color: #fff, $alpha: 0.99);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 8px  rgba($color: #7d7881, $alpha: 0.099);
+
+    .img {
+        height: 320px;
+        width: 100%;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .caption {
+        padding: 32px;
+
+        h5 {
+
+            font-size: 0.89em;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            opacity: 0.66;
+        }
+
+        h4 {
+            margin-bottom: 24px;
+            color: #046b6b;
+        }
+
+        .desc {
+            font-size: 0.88em;
+        }
+    }
+}
+
+.socials{
+    a{
+        text-decoration: none;
+        display: inline-block; 
+        margin: 0 16px;
+
+        color: #046b6b;
+    }
+}
+
+.glass-card{
+    background-color: rgba($color: #fff, $alpha: 0.4);
+    backdrop-filter: blur(15px);
+}
+.img {
+    img {
+        object-fit: cover;
+    }
+}
+
+.container {
+    width: 1128px;
+}
+
+.header {
+    height: 656px;
+    background-color: #fefefe;
+}
+
+
+.icon-list {
+    display: flex;
+    align-items: center;
+
+    svg {
+        height: 32px;
+        width: 32px;
+        margin: 0 8px;
+    }
+}
+
+nav{
+    .menu{
+        display: inline-block;
+        padding: 0;
+        >li{
+            list-style-type:none;
+            display: inline-block;
+
+position: relative;
+>a{
+    display: block;
+    padding: 0 24px;
+    font-weight: 500;
+
+}
+            ul{
+            position:absolute;
+            width: 100%;
+                min-width: fit-content;
+                block-size: fit-content;
+                background-color: #fff;
+                box-shadow: 0 0 16px rgba($color: #000000, $alpha: .2);
+            li{
+                display: block;
+                a{
+                    display: block;
+                    letter-spacing: normal;
+                    
+                }
+            }
+            }
+        }
+    }
+}
