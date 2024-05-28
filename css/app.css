@@ -1,10 +1,17 @@
 body {
   background-color: #fafafa;
+  font-family: "Jost", sans-serif !important;
+  font-optical-sizing: auto;
 }
 
 .header {
   background-image: url(../img/header-bg.jpg);
   background-size: cover;
+}
+
+footer {
+  padding-top: 120px;
+  background-color: #f9e174;
 }
 
 .port-item {
@@ -37,7 +44,7 @@ body {
   color: #046b6b;
 }
 .port-item .caption .desc {
-  font-size: 0.88em;
+  font-size: 1.28em;
 }
 
 .socials a {
@@ -90,6 +97,8 @@ body {
 .icon-list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  row-gap: 16px;
 }
 .icon-list svg {
   height: 32px;
@@ -102,6 +111,13 @@ nav {
   top: 0;
   background-color: #fff;
   padding: 16px 0;
+  z-index: 100;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+  opacity: 0.7;
 }
 nav .menu {
   display: inline-block;
@@ -136,4 +152,14 @@ nav .menu > li ul li {
 nav .menu > li ul li a {
   display: block;
   letter-spacing: normal;
+}
+
+.s-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 720px) {
+  .s-mobile {
+    display: block;
+  }
 }/*# sourceMappingURL=app.css.map */
