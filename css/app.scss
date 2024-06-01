@@ -1,5 +1,7 @@
 :root{
---primary-color:#a2c01c;
+--primary-color:#b72840;
+--primary-dark-color:#8e1529;
+--primary-text-color:#171815;
 }
 
 body{
@@ -13,6 +15,28 @@ body{
     background-size: cover;
 }
 
+
+.btn-primary{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+
+    &:hover{
+        background-color: var(--primary-dark-color);
+            border-color: var(--primary-dark-color);
+    }
+}
+.page-header{
+    height: 370px;
+    background-color: #b72840;
+    display: flex;
+    align-items: center;
+    h1{
+        font-size: 4.88em;
+        font-weight: bold;
+        color: #fff;
+    }
+}
+
 h1{
     font-size: 2.5em;
 }
@@ -21,7 +45,7 @@ p{
 }
 footer{
     padding-top: 120px;
-    background-color: #f9e174;
+    background-color: var(--primary-color);
 }
 .port-item {
     // margin-bottom: 66px;
@@ -161,8 +185,9 @@ row-gap: 16px;
 nav{
     position: sticky;
     top: 0;
-    background-color: #fff;
-    padding: 16px 0;
+    background-color: rgba(255, 255, 255, 0.882);
+    backdrop-filter: blur(8px);
+    padding: 0;
     z-index: 100;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
 
@@ -185,8 +210,19 @@ position: relative;
     display: block;
     padding: 0 16px;
     font-weight: 500;
-    line-height: 44px;
+    line-height: 64px;
+    text-decoration: none;
+    color:var(--primary-text-color) ;
+border-bottom: solid 4px transparent ;
+// border-bottom-width: 4px ;
 
+
+}
+&.active{
+    a{
+        border-bottom-color: var(--primary-color) ;
+        color: var(--primary-color);
+    }
 }
             ul{
             position:absolute;
