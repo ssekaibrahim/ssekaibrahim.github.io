@@ -1,6 +1,7 @@
 :root {
-  --primary-color:#b72840;
-  --primary-dark-color:#8e1529;
+  --primary-color:#37ab17;
+  --primary-dark-color:#099028;
+  --dark-color:#221b1d;
   --primary-text-color:#171815;
 }
 
@@ -24,9 +25,13 @@ body {
   border-color: var(--primary-dark-color);
 }
 
+a[href]:not(.btn) {
+  color: var(--primary-color);
+}
+
 .page-header {
   height: 370px;
-  background-color: #b72840;
+  background-color: var(--primary-dark-color);
   display: flex;
   align-items: center;
 }
@@ -46,7 +51,7 @@ p {
 
 footer {
   padding-top: 120px;
-  background-color: var(--primary-color);
+  background-color: #f5f5f5;
 }
 
 .port-item {
@@ -200,12 +205,12 @@ nav .menu > li > a {
   font-weight: 500;
   line-height: 64px;
   text-decoration: none;
-  color: var(--primary-text-color);
+  color: var(--primary-text-color) !important;
   border-bottom: solid 4px transparent;
 }
 nav .menu > li.active a {
-  border-bottom-color: var(--primary-color);
-  color: var(--primary-color);
+  border-bottom-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
 }
 nav .menu > li ul {
   position: absolute;
